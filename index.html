@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Master - HTML Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="title">Quiz Master</h1>
+            <p id="timer">1:59</p>
+        </div>
+        
+        <div class="progress-bar">
+            <div class="progress-fill" id="progressFill"></div>
+        </div>
+
+        <div class="question-section">
+            <p id="ques"></p>
+        </div>
+
+        <div class="options-section">
+            <div class="option">
+                <input onclick="clicked()" type="radio" value="1" name="options">
+                <label for="" id="opt1"></label>
+            </div>
+            
+            <div class="option">
+                <input onclick="clicked()" type="radio" value="2" name="options">
+                <label for="" id="opt2"></label>
+            </div>
+
+            <div class="option">
+                <input onclick="clicked()" type="radio" value="3" name="options">
+                <label for="" id="opt3"></label>
+            </div>
+        </div>
+
+        <div class="button-section">
+            <button disabled id="btn" onclick="nextques()">Next Question</button>
+        </div>
+    </div>
+    
+    <script src="questions.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
